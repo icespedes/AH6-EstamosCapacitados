@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Estamos Capacitados - Home</title> 
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css"/>
+    <link rel="stylesheet" href="../css/home.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Lato|Helvetica + Neue", rel="stylesheet", type="text/css"/>
+  </head>
+
+  <body>
+    <h2 class="bienvenido">Contacto</h2>
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s6">
+          <input id="nombreContacto" type="text" class="validate">
+          <label for="nombreContacto">Nombre</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s6">
+          <input id="email" type="email" class="validate">
+          <label for="email" data-error="Email Incorrecto" data-success="Correcto">Email</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <textarea id="textarea1" class="materialize-textarea" length="120"></textarea>
+          <label for="textarea1">Asunto</label>
+        </div>
+      </div>
+      <button id="btnContacto" class="btn waves-effect waves-light" type="submit" name="action">Enviar
+        <i class="material-icons right"></i>
+      </button>
+    </form>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous">
+    </script>
+    <script src="../js/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+  </body>
+</html>

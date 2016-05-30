@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  	<meta charset="UTF-8">
+  	<title>Estamos Capacitados - Home</title>	
+
+  	<!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css"/>
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css"/>
+    <link rel="stylesheet" href="css/home.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Lato|Helvetica + Neue", rel="stylesheet", type="text/css"/>
+
+    <script>
+    function setURL(url){
+        document.getElementById('iframe').src = url;
+    }
+    </script>
+  </head>
+  <body background="assets/fondo.jpg">
+    <header class="z-depth-1">
+      <div class="container">
+        <img class="logo-ec" src="assets/Sin fondo.png" alt="Logo EC"/>
+      </div>
+    </header>
+    
+    <nav class="side-navbar navegacion"> <!--navegacion-->
+      <h4 class="empresas">Empresas</h4>
+      <ul class="menu">
+        <li><a onclick="setURL('views/registro.html')" >Registro</a></li>
+        <li><a onclick="setURL('views/login.html')" >Ingresar al Sistema</a></li>
+        <li><a onclick="setURL('views/passrecovery.html')" >¿Olvido su Contraseña?</a></li>
+        <li><a onclick="setURL('views/contacto.html')" >Contacto</a></li>
+      </ul>
+
+      <h4 class="empresas">Candidatos</h4> 
+      <ul class="menu">
+        <li><a onclick="setURL('views/registroCandidato.html')">Registre su Curriculum</a></li>
+        <li><a onclick="setURL('views/buscarEmpleo.html')">Buscar Empleo</a></li>
+        <li><a onclick="setURL('views/listaEmpresas.html')">Lista de empresas</a></li>
+        <li><a onclick="setURL('views/login.html')">Ingresar al sistema</a></li>
+        <li><a onclick="setURL('views/passrecovery.html')">¿Olvido su contraseña?</a></li>
+      </ul>
+    </nav>
+
+    <iframe src="views/bienvenido.html" id="iframe" class="iframe z-depth-2" frameborder="0" scrolling="yes" > HOLA</iframe>
+
+  	<!-- Compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+  </body>
+</html>
